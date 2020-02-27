@@ -2,9 +2,15 @@
 GPU is needed to run this code.
 
 This is a PyTorch implementation of the TrQA system described based on TrQA and Transformers.
-```angular2
+Transformers is different from Huggingface/Transformers. You need to clone it from https://github.com/erenup/pytorch-transformers.git
+and install it with the branch of trqa_transformers. 
+```
 git clone https://github.com/erenup/Trqa.git
 cd Trqa
+python setup.py develop
+git clone https://github.com/erenup/pytorch-transformers.git
+cd transformers
+git checkout trqa_transformers
 python setup.py develop
 ```
 Download Data and Models from [pretrained models and database](https://drive.google.com/open?id=1tilewF8o4OufQ3WjaoHZ312btigbWAry) and unzip to Trqa/data
